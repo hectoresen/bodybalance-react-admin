@@ -18,7 +18,8 @@ import DashboardDefault from 'pages/dashboard/index';
 
 // ==============================|| MAIN LAYOUT ||============================== //
 
-const MainLayout = () => {
+const MainLayout = (props) => {
+    console.log('PROPS', props)
     const theme = useTheme();
     const matchDownLG = useMediaQuery(theme.breakpoints.down('xl'));
     const dispatch = useDispatch();

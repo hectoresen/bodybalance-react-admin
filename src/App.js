@@ -5,8 +5,11 @@ import ScrollTop from 'components/ScrollTop';
 import Login from 'pages/authentication/Login';
 import MainLayout from 'layout/MainLayout/index';
 import Register from 'pages/authentication/Register';
+import { lazy } from 'react';
+import Loadable from 'components/Loadable';
 
-// ==============================|| APP - THEME, ROUTER, LOCAL  ||============================== //
+
+const Results = Loadable(lazy(() => import('pages/extra-pages/Results')));
 
 const App = () => (
     <ThemeCustomization>
@@ -16,6 +19,7 @@ const App = () => (
                     <Route path="/" element={<Login />} />
                     <Route path="/dashboard" element={<MainLayout />} />
                     <Route path="/register" element={<Register />} />
+                    <Route path="/results" element={<Results />} />
                 </Route>
             </Routes>
         </ScrollTop>

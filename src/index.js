@@ -4,11 +4,12 @@ import { BrowserRouter } from 'react-router-dom';
 
 // scroll bar
 import 'simplebar/src/simplebar.css';
-
-// third-party
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
 import { Provider } from 'react-redux';
 
-// apex-chart
+
 import 'assets/third-party/apex-chart.css';
 
 // project import

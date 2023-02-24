@@ -24,32 +24,32 @@ const ProfileTab = ({ handleLogout }) => {
                 <ListItemIcon>
                     <EditOutlined />
                 </ListItemIcon>
-                <ListItemText primary="Edit Profile" />
+                <ListItemText primary="Edit perfil" />
             </ListItemButton>
             <ListItemButton selected={selectedIndex === 1} onClick={(event) => handleListItemClick(event, 1)}>
                 <ListItemIcon>
                     <UserOutlined />
                 </ListItemIcon>
-                <ListItemText primary="View Profile" />
+                <ListItemText primary="Mi perfil" />
             </ListItemButton>
 
             <ListItemButton selected={selectedIndex === 3} onClick={(event) => handleListItemClick(event, 3)}>
                 <ListItemIcon>
                     <ProfileOutlined />
                 </ListItemIcon>
-                <ListItemText primary="Social Profile" />
+                <ListItemText primary="Otros" />
             </ListItemButton>
             <ListItemButton selected={selectedIndex === 4} onClick={(event) => handleListItemClick(event, 4)}>
                 <ListItemIcon>
                     <WalletOutlined />
                 </ListItemIcon>
-                <ListItemText primary="Billing" />
+                <ListItemText primary="Facturación" />
             </ListItemButton>
             <ListItemButton selected={selectedIndex === 2} onClick={handleLogout}>
                 <ListItemIcon>
                     <LogoutOutlined />
                 </ListItemIcon>
-                <ListItemText primary="Logout" />
+                <ListItemText primary="Cerrar sesión" />
             </ListItemButton>
         </List>
     );

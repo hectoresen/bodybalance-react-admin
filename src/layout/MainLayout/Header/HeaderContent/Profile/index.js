@@ -98,7 +98,8 @@ const Profile = () => {
             >
                 <Stack direction="row" spacing={2} alignItems="center" sx={{ p: 0.5 }}>
                     <Avatar alt="profile user" src={avatar1} sx={{ width: 32, height: 32 }} />
-                    <Typography variant="subtitle1">John Doe</Typography>
+                    {/* Usuario */}
+                    <Typography variant="subtitle1">Jacobo</Typography>
                 </Stack>
             </ButtonBase>
             <Popper
@@ -141,9 +142,9 @@ const Profile = () => {
                                                     <Stack direction="row" spacing={1.25} alignItems="center">
                                                         <Avatar alt="profile user" src={avatar1} sx={{ width: 32, height: 32 }} />
                                                         <Stack>
-                                                            <Typography variant="h6">John Doe</Typography>
+                                                            <Typography variant="h6">Jacobo</Typography>
                                                             <Typography variant="body2" color="textSecondary">
-                                                                UI/UX Designer
+                                                                Personal trainer
                                                             </Typography>
                                                         </Stack>
                                                     </Stack>
@@ -173,7 +174,7 @@ const Profile = () => {
                                                                 textTransform: 'capitalize'
                                                             }}
                                                             icon={<UserOutlined style={{ marginBottom: 0, marginRight: '10px' }} />}
-                                                            label="Profile"
+                                                            label="Perfil"
                                                             {...a11yProps(0)}
                                                         />
                                                         <Tab
@@ -185,7 +186,7 @@ const Profile = () => {
                                                                 textTransform: 'capitalize'
                                                             }}
                                                             icon={<SettingOutlined style={{ marginBottom: 0, marginRight: '10px' }} />}
-                                                            label="Setting"
+                                                            label="Ajustes"
                                                             {...a11yProps(1)}
                                                         />
                                                     </Tabs>
